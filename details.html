@@ -118,6 +118,42 @@
           </div>
         </div>
       </section>
+      <section class="store-gallery" id="gallery">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8" data-aos="zoom-in">
+              <transition name="slide-fade" mode="out-in">
+                <img
+                  :src="photos[activePhoto].url"
+                  :key="photos[activePhoto].id"
+                  class="w-100 main-image"
+                  alt=""
+                />
+              </transition>
+            </div>
+            <div class="col-lg-2">
+              <div class="row">
+                <div
+                  class="col-3 col-lg-12 mt-2 mt-lg-0"
+                  v-for="(photos, index) in photos"
+                  :key="photos.id"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <a href="#" @click="changeActive(index)">
+                    <img
+                      :src="photos.url"
+                      class="w-100 thumbnail-image"
+                      :class="{active: index === activePhoto}"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <footer>
       <div class="container">
@@ -134,6 +170,41 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="vendor/vue/vue.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: "#gallery",
+        mounted() {
+          AOS.init();
+        },
+        data: {
+          activePhoto: 1,
+          photos: [
+            {
+              id: 1,
+              url: "images/product-details-1.jpg",
+            },
+            {
+              id: 2,
+              url: "images/product-details-2.jpg",
+            },
+            {
+              id: 3,
+              url: "images/product-details-3.jpg",
+            },
+            {
+              id: 4,
+              url: "images/product-details-4.jpg",
+            },
+          ],
+        },
+        methods: {
+          changeActive(id) {
+            this.activePhoto = id;
+          },
+        },
+      });
     </script>
     <script src="script/navbar-scroll.js"></script>
   </body>
