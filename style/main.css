@@ -10963,4 +10963,22 @@ footer p {
   font-size: 16px;
   color: #ff7158;
 }
+
+.store-breadcrumbs .breadcrumb {
+  background: transparent;
+  padding: 10px 0;
+}
+
+.store-breadcrumbs .breadcrumb-item + .breadcrumb-item::before {
+  padding: 0px 1.5rem;
+}
+
+.store-breadcrumbs breadcrumb-item.active {
+  font-weight: 300;
+  color: #0c0d36;
+}
+
+.store-breadcrumbs a {
+  color: #979797;
+}
 /*# sourceMappingURL=main.css.map */
