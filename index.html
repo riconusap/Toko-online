@@ -390,5 +390,13 @@
       AOS.init();
     </script>
     <script src="script/navbar-scroll.js"></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-fixed-top");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
   </body>
 </html>
