@@ -4,7 +4,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
- /* Test */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 :root {
   --blue: #007bff;
@@ -10880,17 +10879,23 @@ footer p {
   transition: background-color 200ms linear;
 }
 
-.pages-home h5 {
+.page-home h5 {
   font-weight: 300;
   margin-bottom: 15px;
 }
 
-.pages-home .store-trend-categories {
+.page-home .store-trend-categories {
   margin-top: 30px;
 }
 
-.pages-home .store-new-product {
+.page-home .store-new-products {
   margin-top: 10px;
+}
+
+.page-details h5 {
+  font-weight: normal;
+  font-size: 18px;
+  color: #0C0D36;
 }
 
 .page-details .store-gallery {
@@ -10908,6 +10913,59 @@ footer p {
 
 .page-details .store-gallery .thumbnail-image:hover, .page-details .store-gallery .thumbnail-image.active {
   border: 2px solid #ff7158;
+}
+
+.page-details .store-heading {
+  margin-bottom: 10px;
+}
+
+.page-details .store-heading h1 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #0C0D36;
+  margin-bottom: 0px;
+}
+
+.page-details .store-heading .owner {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #979797;
+  margin-bottom: 8px;
+}
+
+.page-details .store-heading .price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FF7158;
+  margin-bottom: 10px;
+}
+
+.page-details .store-description {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #525252;
+}
+
+.page-details .store-review {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 180%;
+  color: #525252;
+}
+
+.page-details .store-review .media img {
+  max-width: 50px;
+}
+
+.page-details .store-review .media-body h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 180%;
+  color: #0C0D36;
 }
 
 .component-categories {
