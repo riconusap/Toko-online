@@ -12,8 +12,9 @@
     <title>TOKO ONLINE</title>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="style/main.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.ckeditor.com/4.17.1/standard/ckeditor.js"></script>
+
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -24,10 +25,10 @@
             <img src="images/logo.svg" alt="logo-toko" class="my-4">
           </div>
           <div class="list-group list-group-flush">
-            <a href="dashboard.html" class="list-group-item list-group-item-action">Dashboard</a>
-            <a href="dashboard-product.html" class="list-group-item list-group-item-action active">My Products</a>
+            <a href="dashboard.html" class="list-group-item list-group-item-action ">Dashboard</a>
+            <a href="dashboard-products.html" class="list-group-item list-group-item-action ">My Products</a>
             <a href="dashboard-transactions.html" class="list-group-item list-group-item-action ">Transactions</a>
-            <a href="dashboard-setting.html" class="list-group-item list-group-item-action ">Store Settings</a>
+            <a href="dashboard-setting.html" class="list-group-item list-group-item-action active">Store Settings</a>
             <a href="dashboard-account.html" class="list-group-item list-group-item-action ">My Account</a>
           </div>
         </div>
@@ -108,61 +109,94 @@
           <div class="section-content section-dashboard-home" data-aos="fade-up">
             <div class="container-fluid">
               <div class="dashboard-heading">
-                <h2 class="dashboard-title">My Products</h2>
-                  <p class="dashboard-subtitle">Manage it well and get money</p>
-                  <a href="dashboard-products-create.html" class="btn btn-success mb-3">
-                    Add New Product
-                  </a>
+                <h2 class="dashboard-title">Create New Product</h2>
+                  <p class="dashboard-subtitle">Create your own product</p>
               </div>
               <div class="dashboard-content">
                 <div class="row">
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
-                    <a
-                      class="card card-dashboard-product d-block"
-                      href="dashboard-products-details.html"
-                      >
-                      <div class="card-body">
-                            <img class="w-100 mb-2" src="images/product-card-1.png" alt="">
-                            <div class="product-title">Shirup Marzzan</div>
-                            <div class="product-category">Foods</div>
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body col-12">
+                        <div class="row d-flex align-items-baseline">
+                          <div class="col-md-6">
+                            <form class="mt-3">
+                              <div class="form-group">
+                                <label>Product Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  aria-describedby="nameHelp"
+                                  value="Shirup Marzan"
+                                  autofocus
+                                />
+                              </div>
+                          </div>
+                          <div class="col-md-6">
+                            <form class="mt-3">
+                              <div class="form-group">
+                                <label>Product Name</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  aria-describedby="nameHelp"
+                                  value="Shirup Marzan"
+                                  autofocus
+                                />
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <form class="mt-3">
+                              <div class="form-group">
+                                <label>Category</label>
+                                <select
+                                  name="category"
+                                  id="category"
+                                  class="form-control"
+                                >
+                                  <option value="Furniture">Furniture</option>
+                                </select>
+                              </div>
+                          </div>
+                          <div class="col-md-12">
+                            <form class="mt-3">
+                              <div class="form-group">
+                                <label>Description</label>
+                                <textarea name="editor">The Nike Air Max 720 SE goes bigger than ever before with Nike's tallest Air unit yet for 
+                                  unimaginable, all-day comfort. There's super breathable fabrics on the upper, while 
+                                  colours add a modern edge. Bring the past into the future with the Nike Air Max 2090, 
+                                  a bold look inspired by the DNA of the iconic Air Max 90. Brand-new Nike Air cushioning </textarea>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="col-md-12">
+                            <div class="form-group">
+                              <label for="thumbnails">Thumbnails</label>
+                              <input
+                                type="file"
+                                multiple
+                                class="form-control pt-1"
+                                id="thumbnails"
+                                aria-describedby="thumbnails"
+                                name="thumbnails"
+                              />
+                              <small class="text-muted">
+                                Kamu dapat memilih lebih dari satu file
+                              </small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-md-12">
+                            <button
+                              type="submit"
+                              class="btn btn-success px-5 btn-block"
+                            >
+                              Update Product
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
-                    <a
-                      class="card card-dashboard-product d-block"
-                      href="dashboard-products-details.html"
-                      >
-                      <div class="card-body">
-                            <img class="w-100 mb-2" src="images/product-card-2.png" alt="">
-                            <div class="product-title">Shirup Marzzan</div>
-                            <div class="product-category">Foods</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
-                    <a
-                      class="card card-dashboard-product d-block"
-                      href="dashboard-products-details.html"
-                      >
-                      <div class="card-body">
-                            <img class="w-100 mb-2" src="images/product-card-3.png" alt="">
-                            <div class="product-title">Shirup Marzzan</div>
-                            <div class="product-category">Foods</div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-2">
-                    <a
-                      class="card card-dashboard-product d-block" 
-                      href="dashboard-products-details.html"
-                      >
-                      <div class="card-body">
-                            <img class="w-100 mb-2" src="images/product-card-4.png" alt="">
-                            <div class="product-title">Shirup Marzzan</div>
-                            <div class="product-category">Foods</div>
-                      </div>
-                    </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -184,6 +218,9 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
       });
+    </script>
+    <script>
+        CKEDITOR.replace( 'editor' );
     </script>
   </body>
 </html>

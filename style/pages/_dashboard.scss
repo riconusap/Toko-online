@@ -45,6 +45,7 @@
             color: #0C0D36            ;
         }
     }
+
     @include media-breakpoint-up(md){
         #sidebar-wrapper{
             margin-left: 0px;
@@ -76,6 +77,12 @@
             font-size: 16px;
             color: #9191a9;
           }
+          .product-title{
+            font-size: 18px;
+            line-height: 27px;
+            color: #0c0d36;
+          }
+          
     }
     .nav-pills {
         .nav-link {
@@ -88,5 +95,14 @@
             background: none;
           }
         }
-      }
+    }
+    .gallery-container{
+          .delete-gallery{
+              display: block;
+              position: absolute;
+              top: -10px;
+              right: 5px;
+          }
+    }
+    
 }
